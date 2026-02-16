@@ -5,28 +5,29 @@
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](#-라이선스-license)
 
-현대적인 개발 환경과 견고한 아키텍처를 지향하는 **React 보일러플레이트**인 꿀한스푼 입니다.
+현대적인 개발 환경과 직관적인 개발 경험을 지향하는 **React 보일러플레이트**인 꿀한스푼입니다.
 
 ## 🚀 프로젝트 목적
 
 > **"설정의 번거로움은 최소화하고, 비즈니스 가치는 최대화합니다."**
 >
-> 본 프로젝트는 현대적인 프론트엔드 개발에 필요한 최적의 기술 스택을 통합하여 **초기 구축의 수고를 덜어주고**, **엔터프라이즈급 애플리케이션 개발을 위한 견고하고 표준화된 가이드라인**을 제시합니다.
+> 본 프로젝트는 현대적인 프론트엔드 개발에 필요한 최적의 기술 스택을 통합하여 **초기 구축의 수고를 덜어주고**, **유연하고 확장 가능한 애플리케이션 개발을 위한 표준 가이드라인**을 제시합니다.
 >
 > 개발자가 복잡한 환경 설정 대신 핵심 로직 구현에만 집중할 수 있는 최상의 개발 경험을 제공하는 것이 목표입니다.
 
 ## ✨ 핵심 기능
 
-- **유형 안전성 (Type Safety)**:
-  - TypeScript 5와 Zod를 통한 완벽한 런타임 및 컴파일 타임 타입 검사.
-- **최신 스택**:
-  - React 19의 최신 기능과 Vite 6의 압도적인 빌드 속도 활용.
-- **선언적 라우팅**:
-  - TanStack Router를 이용한 유형 안전한 파일 기반 라우팅.
-- **효율적인 데이터 관리**:
-  - TanStack Query를 통한 선진적인 캐싱 및 상태 동기화.
+- **실무형 모던 기술 스택**:
+  - Zustand, Tailwind CSS, TanStack Router 등 실제 현업에서 가장 선호되는 도구들의 최적 조합.
+- **즉각적인 개발 시작 (Zero-Config)**:
+  - 개발 환경 설정의 번거로움은 덜어내고, 제품의 핵심 가치 구현에만 집중할 수 있습니다.
+- **선언적 라우팅 & 상태 관리**:
+  - TanStack Router와 Zustand를 활용한 직관적이고 유형 안전한 개발 경험.
 - **모던 디자인 시스템**:
-  - TailwindCSS 4와 Shadcn UI를 결합한 빠르고 아름다운 UI 구축.
+  - Tailwind CSS 4와 Shadcn UI를 결합한 빠르고 아름다운 UI 구축.
+  - **'꿀한스푼'**만의 독창적이고 따뜻한 허니 톤 테마 적용.
+- **반응형 레이아웃**:
+  - 모바일, 태블릿, 데스크탑 등 모든 환경에 최적화된 유동적인 사이드바 및 오버레이 시스템.
 - **품질 보증**:
   - ESLint, Prettier, Husky를 활용한 자동화된 코드 품질 관리 및 컨벤션 유지.
 
@@ -44,7 +45,7 @@
 
 ### UI & Styling
 
-- **CSS Framework**: TailwindCSS 4
+- **CSS Framework**: Tailwind CSS 4
 - **UI Components**: Shadcn UI (Radix UI 기반)
 - **Icons**: Lucide React
 - **Toast**: Sonner
@@ -84,7 +85,7 @@ src/
 ├── components/           # 재사용 가능한 공용 컴포넌트
 │   ├── ui/               # Shadcn UI 기본 아토믹 컴포넌트
 │   └── layout/           # 애플리케이션 프레임워크 (Sidebar, Header 등)
-├── features/             # 도메인 기반의 기능별 모듈 가이드
+├── features/             # (선택 사항) 도메인 기반의 기능별 모듈 가이드
 ├── hooks/                # 전역에서 사용되는 커스텀 React 훅
 ├── lib/                  # 외부 라이브러리 설정 (axios, queryClient 등)
 ├── routes/               # 페이지 및 라우트 정의 (TanStack Router 기반)
@@ -112,11 +113,6 @@ cp .env.example .env
 pnpm dev
 ```
 
-## 📞 연락처 (Contact)
-
-- **Phone**: 010-2835-7421
-- **Email**: sadkop00@gmail.com
-
 ## 📄 라이선스 (License)
 
 Copyright (c) 2026 **Yoon SangHwan** All Rights Reserved.
@@ -131,3 +127,8 @@ Copyright (c) 2026 **Yoon SangHwan** All Rights Reserved.
 - **이용 문의**: 상업적 활용 또는 프로젝트 협업에 관한 문의는 아래의 연락처를 통해 협의해 주시기 바랍니다.
 
 > **Note**: 본 프로젝트는 저작권법 및 브랜드 보호 규정의 지원을 받는 독자적인 저작물이며, 무단 사용 시 법적 책임을 물을 수 있습니다.
+
+## 📞 연락처 (Contact)
+
+- **Phone**: 010-2835-7421
+- **Email**: sadkop00@gmail.com
