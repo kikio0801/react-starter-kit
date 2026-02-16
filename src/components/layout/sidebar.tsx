@@ -24,8 +24,8 @@ export function Sidebar() {
   return (
     <aside
       className={cn(
-        'fixed inset-y-0 left-0 z-40 flex flex-col transition-all duration-300',
-        'bg-sidebar border-r-4',
+        'fixed inset-y-0 left-0 z-100 flex flex-col transition-all duration-300',
+        'bg-background border-r-4',
         isOpen ? 'translate-x-0' : '-translate-x-full',
         isCollapsed ? 'w-16' : 'w-64',
         'lg:translate-x-0'

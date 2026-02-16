@@ -24,20 +24,20 @@ export const Route = createFileRoute('/_authenticated/dashboard')({
 })
 
 const activityData = [
-  { name: 'Mon', active: 4000, passive: 2400 },
-  { name: 'Tue', active: 3000, passive: 1398 },
-  { name: 'Wed', active: 2000, passive: 9800 },
-  { name: 'Thu', active: 2780, passive: 3908 },
-  { name: 'Fri', active: 1890, passive: 4800 },
-  { name: 'Sat', active: 2390, passive: 3800 },
-  { name: 'Sun', active: 3490, passive: 4300 },
+  { name: '월', active: 4000, passive: 2400 },
+  { name: '화', active: 3000, passive: 1398 },
+  { name: '수', active: 2000, passive: 9800 },
+  { name: '목', active: 2780, passive: 3908 },
+  { name: '금', active: 1890, passive: 4800 },
+  { name: '토', active: 2390, passive: 3800 },
+  { name: '일', active: 3490, passive: 4300 },
 ]
 
 const categoryData = [
-  { name: 'Architecture', value: 400, color: '#f0c419' },
-  { name: 'Performance', value: 300, color: '#c9b084' },
-  { name: 'Security', value: 300, color: '#5D4037' },
-  { name: 'UX/UI', value: 200, color: '#fff5cc' },
+  { name: '직접 접속', value: 400, color: '#f0c419' },
+  { name: '관련 검색', value: 300, color: '#c9b084' },
+  { name: '소셜 미디어', value: 300, color: '#5D4037' },
+  { name: '이메일/기타', value: 200, color: '#fff5cc' },
 ]
 
 function DashboardPage() {
@@ -84,20 +84,6 @@ function DashboardPage() {
         <Card className="animate-fade-in-delay-1 border-border shadow-sm">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-muted-foreground text-sm font-medium">
-              평균 체류 시간
-            </CardTitle>
-            <span className="text-xl">🕒</span>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-[#5D4037]">4m 32s</div>
-            <p className="mt-1 text-xs font-medium text-amber-500">
-              -2% 전일 대비
-            </p>
-          </CardContent>
-        </Card>
-        <Card className="animate-fade-in-delay-1 border-border shadow-sm md:col-span-2 lg:col-span-1">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-muted-foreground text-sm font-medium">
               전환율
             </CardTitle>
             <span className="text-xl">💎</span>
@@ -106,6 +92,20 @@ function DashboardPage() {
             <div className="text-2xl font-bold text-[#5D4037]">18.5%</div>
             <p className="mt-1 text-xs font-medium text-green-600">
               +2.4% 전월 대비
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="animate-fade-in-delay-1 border-border shadow-sm">
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-muted-foreground text-sm font-medium">
+              평균 체류 시간
+            </CardTitle>
+            <span className="text-xl">🕒</span>
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold text-[#5D4037]">4m 32s</div>
+            <p className="mt-1 text-xs font-medium text-amber-500">
+              -2% 전일 대비
             </p>
           </CardContent>
         </Card>
@@ -152,6 +152,7 @@ function DashboardPage() {
                 <Area
                   type="monotone"
                   dataKey="active"
+                  name="활성 사용자"
                   stroke="#f0c419"
                   strokeWidth={3}
                   fillOpacity={1}
@@ -161,6 +162,7 @@ function DashboardPage() {
                 <Area
                   type="monotone"
                   dataKey="passive"
+                  name="비활성 사용자"
                   stroke="#c9b084"
                   strokeWidth={2}
                   fillOpacity={0.1}
@@ -174,10 +176,8 @@ function DashboardPage() {
 
         <Card className="animate-fade-in-delay-2 border-border shadow-sm lg:col-span-3">
           <CardHeader>
-            <CardTitle className="text-lg text-[#5D4037]">
-              카테고리 분포
-            </CardTitle>
-            <CardDescription>주요 기술 스택별 가중치</CardDescription>
+            <CardTitle className="text-lg text-[#5D4037]">방문 경로</CardTitle>
+            <CardDescription>유입 출처별 가중치</CardDescription>
           </CardHeader>
           <CardContent className="h-[300px] sm:h-[350px]">
             <ResponsiveContainer width="100%" height="100%">
@@ -208,6 +208,7 @@ function DashboardPage() {
                 />
                 <Bar
                   dataKey="value"
+                  name="방문자 수"
                   radius={[0, 4, 4, 0]}
                   animationDuration={1500}
                 >

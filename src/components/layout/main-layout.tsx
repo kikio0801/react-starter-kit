@@ -8,11 +8,10 @@ interface MainLayoutProps {
 }
 
 export function MainLayout({ children }: MainLayoutProps) {
-  const { isCollapsed } = useSidebarStore()
+  const { isOpen, isCollapsed, setOpen } = useSidebarStore()
 
   return (
     <div className="relative min-h-screen">
-      <Sidebar />
       <div
         className={cn(
           'flex min-h-screen flex-col transition-all duration-300',
@@ -22,6 +21,16 @@ export function MainLayout({ children }: MainLayoutProps) {
         <Header />
         <main className="flex-1 p-4 lg:p-6">{children}</main>
       </div>
+
+      {/* Sidebar Overlay - Only visible on mobile/tablet when sidebar is open */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-90 bg-black/50 lg:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
+
+      <Sidebar />
     </div>
   )
 }
