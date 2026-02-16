@@ -1,4 +1,4 @@
-import { LayoutDashboard } from 'lucide-react'
+import { ChartColumn, Home } from 'lucide-react'
 import { Link, useRouterState } from '@tanstack/react-router'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
@@ -12,7 +12,8 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { title: 'Dashboard', href: '/', icon: LayoutDashboard },
+  { title: '홈', href: '/', icon: Home },
+  { title: '대시보드', href: '/dashboard', icon: ChartColumn },
 ]
 
 export function Sidebar() {
@@ -24,19 +25,26 @@ export function Sidebar() {
     <aside
       className={cn(
         'fixed inset-y-0 left-0 z-40 flex flex-col transition-all duration-300',
-        'bg-sidebar border-r',
+        'bg-sidebar border-r-4',
         isOpen ? 'translate-x-0' : '-translate-x-full',
         isCollapsed ? 'w-16' : 'w-64',
         'lg:translate-x-0'
       )}
+      style={{ borderColor: 'rgba(201, 176, 132, 0.4)' }}
     >
       {/* Logo */}
-      <div className="border-border/50 flex h-14 items-center overflow-hidden border-b px-4">
-        <Link to="/" className="flex items-center gap-2 font-bold">
-          <div className="bg-primary flex h-8 w-8 items-center justify-center rounded-lg shadow-sm">
-            <LayoutDashboard className="text-primary-foreground h-5 w-5" />
-          </div>
-          {!isCollapsed && <span className="text-lg">React Starter Kit</span>}
+      <div className="flex h-16 items-center px-6">
+        <Link to="/" className="flex items-center gap-3 font-bold">
+          <img
+            src="/service-logo.png"
+            alt="Logo"
+            className="h-14 w-14 object-contain"
+          />
+          {!isCollapsed && (
+            <span className="text-xl tracking-tight text-[#744638]">
+              꿀한스푼
+            </span>
+          )}
         </Link>
       </div>
 
@@ -61,7 +69,7 @@ export function Sidebar() {
                     className={cn(
                       'h-4 w-4 transition-transform duration-200 group-hover:scale-110',
                       !isCollapsed && 'mr-2',
-                      isActive && 'text-foreground'
+                      isActive && 'text-[#c4a46d]'
                     )}
                   />
                   {!isCollapsed && <span>{item.title}</span>}

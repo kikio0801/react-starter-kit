@@ -1,7 +1,68 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import 'tailwindcss';
 @import 'tailwindcss/theme' layer(theme) important;
 @import 'tailwindcss/preflight' layer(base) important;
 @import 'tailwindcss/utilities' layer(utilities) important;
+
+/* Font Definitions */
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* Pretendard Import (CDN) */
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -35,40 +96,54 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--root-font-sans); /* Use concrete root variable to avoid circularity */
 }
 
 :root {
-  /* Monochrome / Grayscale Palette */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.1 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.1 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.1 0 0);
-  --primary: oklch(0.1 0 0);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: oklch(0.1 0 0);
-  --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.5 0 0);
-  --accent: oklch(0.96 0 0);
-  --accent-foreground: oklch(0.1 0 0);
-  --destructive: oklch(0.3 0 0);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.1 0 0);
-  --radius: 0.5rem;
+  /* Font Configuration (Switchable) */
+  --root-font-sans: 'A2z', 'Pretendard', sans-serif; /* Default: A2z */
+  /* --root-font-sans: 'Pretendard', sans-serif; */ /* Uncomment to switch to Pretendard */
 
-  /* Sidebar - Grayscale */
-  --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.1 0 0);
-  --sidebar-primary: oklch(0.1 0 0);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.95 0 0);
-  --sidebar-accent-foreground: oklch(0.1 0 0);
-  --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.1 0 0);
+  /* Honey Spoon Theme */
+  --background: #ffffff; /* Pure White */
+  --foreground: #4a3b2a; /* Brown */
+  
+  --card: #ffffff;
+  --card-foreground: #4a3b2a;
+  
+  --popover: #ffffff;
+  --popover-foreground: #4a3b2a;
+  
+  --primary: #f0c419; /* Honey Gold */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #fff5cc; /* Light Honey */
+  --secondary-foreground: #d99a00;
+  
+  --muted: #f7f2e8;
+  --muted-foreground: #8c7b6d;
+  
+  --accent: #fff9db; 
+  --accent-foreground: #4a3b2a;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  
+  --border: #c9b084; /* Reverted to lighter beige for natural look */
+  --input: #c9b084;
+  --ring: #f0c419; 
+  
+  --radius: 0.75rem;
+
+  /* Sidebar */
+  --sidebar: #fffbf0; /* Warm Cream */
+  --sidebar-foreground: #4a3b2a;
+  --sidebar-primary: #f0c419;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fff5cc; 
+  --sidebar-accent-foreground: #d99a00;
+  --sidebar-border: #c9b084; /* Stronger Warm Beige */
+  --sidebar-ring: #f0c419;
 }
 
 @layer base {
@@ -77,15 +152,13 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    @apply bg-background text-foreground font-sans;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Pretendard', system-ui, sans-serif;
-    font-weight: 700;
+    @apply font-bold;
   }
 
   code, pre {

@@ -7,7 +7,10 @@ export function Header() {
   const { toggle } = useSidebarStore()
 
   return (
-    <header className="bg-background sticky top-0 z-50 flex h-14 items-center gap-4 border-b px-4 lg:px-6">
+    <header
+      className="bg-background sticky top-0 z-10 flex h-16 w-full items-center justify-between border-b-4 px-6 backdrop-blur-md transition-all duration-300 ease-in-out"
+      style={{ borderColor: 'rgba(201, 176, 132, 0.4)' }}
+    >
       <Button
         variant="ghost"
         size="icon"
