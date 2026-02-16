@@ -1,15 +1,27 @@
-# 🚀 React Project Starter
+# 🍯 꿀한스푼
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](#-라이선스-license)
 
-현대적인 개발 환경과 직관적인 개발 경험을 지향하는 **React 보일러플레이트**인 꿀한스푼입니다.
+<br />
+<div align="center">
+  <img src="public/service-logo.png" alt="꿀한스푼 로고" width="200" />
+  <br />
+
+**🔗 [데모 페이지 바로가기](https://honey-starter-kit.netlify.app/)**
+
+</div>
+
+<br />
+현대적인 개발 환경과 직관적인 개발 경험을 지향하는 **React 보일러플레이트**, 꿀한스푼입니다. 복잡한 설정의 쓴맛은 덜어내고, 제품 핵심 구현의 달콤함만 남겼습니다.
+
+<br />
 
 ## 🚀 프로젝트 목적
 
-> **"설정의 번거로움은 최소화하고, 비즈니스 가치는 최대화합니다."**
+> **"설정의 번거로움은 최소화하고, 제품 핵심 구현의 가치는 최대화합니다."**
 >
 > 본 프로젝트는 현대적인 프론트엔드 개발에 필요한 최적의 기술 스택을 통합하여 **초기 구축의 수고를 덜어주고**, **유연하고 확장 가능한 애플리케이션 개발을 위한 표준 가이드라인**을 제시합니다.
 >
@@ -30,6 +42,10 @@
   - 모바일, 태블릿, 데스크탑 등 모든 환경에 최적화된 유동적인 사이드바 및 오버레이 시스템.
 - **품질 보증**:
   - ESLint, Prettier, Husky를 활용한 자동화된 코드 품질 관리 및 컨벤션 유지.
+- **SEO 및 웹 앱 최적화**:
+  - `react-helmet-async`를 활용한 페이지별 동적 메타 태그 및 기술 메타 데이터 주입.
+  - **웹 앱 최적화**: `mobile-web-app-capable`, 테마 컬러 등 PWA 환경 최적화 반영.
+  - **검색 효율 극대화**: `robots.txt`, `Canonical URL`, `notranslate` 설정을 통한 수집 정밀도 향상.
 
 ## 🛠 기술 스택
 

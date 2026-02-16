@@ -13,7 +13,7 @@ function HomePage() {
           <span className="text-[#c4a46d]">꿀한스푼</span> 🍯
         </h1>
         <p className="text-muted-foreground mt-2 text-base md:text-lg">
-          달콤하고 견고한 프로젝트의 시작을 함께합니다.
+          복잡한 설정의 쓴맛은 덜어내고, 비즈니스 로직의 달콤함만 남겼습니다.
         </p>
       </div>
 
