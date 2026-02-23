@@ -51,13 +51,13 @@
 
 ### 프론트엔드 코어
 
-| 분류                 | 기술                                                                            |
-| :------------------- | :------------------------------------------------------------------------------ |
-| **Framework**        | [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)  |
-| **Build Tool**       | [Vite 6](https://vitejs.dev/)                                                   |
-| **Routing**          | [TanStack Router](https://tanstack.com/router)                                  |
-| **State Management** | [Zustand](https://zustand-demo.pmnd.rs/)                                        |
-| **Data Fetching**    | [TanStack Query](https://tanstack.com/query) + [Axios](https://axios-http.com/) |
+| 분류                 | 기술                   |
+| :------------------- | :--------------------- |
+| **Framework**        | React 19 + TypeScript  |
+| **Build Tool**       | Vite 6                 |
+| **Routing**          | TanStack Router        |
+| **State Management** | Zustand                |
+| **Data Fetching**    | TanStack Query + Axios |
 
 ### UI & Styling
 
@@ -98,7 +98,7 @@ src/
 ### 사전 요구사항
 
 - **Node.js**: 20.x 이상
-- **Package Manager**: [pnpm](https://pnpm.io/) 9.x 이상
+- **Package Manager**: pnpm 9.x 이상
 
 ### 설치 및 로컬 개발
 
