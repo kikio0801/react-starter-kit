@@ -119,7 +119,7 @@ Copyright (c) 2026 **Yoon SangHwan** All Rights Reserved.
 
 ### ⚠️ 저작권 및 이용 안내
 
-👉 [자세히 보기](./document/license.md)
+👉 [자세히 보기](./LICENSE)
 
 ## 📞 연락처 (Contact)
 
