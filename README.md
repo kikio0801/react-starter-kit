@@ -10,7 +10,7 @@
   <img src="public/service-logo.png" alt="꿀한스푼 로고" width="200" />
   <br />
 
-**🔗 [데모 페이지 바로가기](https://honey-starter-kit.netlify.app/)**
+**🔗 [데모 페이지 바로가기](https://charming-quokka-b95a3a.netlify.app/)**
 
 </div>
 
