@@ -111,5 +111,4 @@ Copyright (c) 2026 **Yoon SangHwan** All Rights Reserved.
 
 ## 📞 연락처 (Contact)
 
-- **Phone**: 010-2835-7421
 - **Email**: sadkop00@gmail.com
